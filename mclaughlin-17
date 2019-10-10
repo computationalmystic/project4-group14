@@ -2,60 +2,62 @@
 
 ## Original team design document (Group 14 - Assignment 4): https://github.com/SarahMac11/skm9b3/blob/master/assignment-four/Group%2014%20-%20Assignment%204.docx
 
-## Grading Assignment:
+## Activies:
+# Grading Assignment:
 	# Login Page 
-		# Methods: 
+		## Methods: 
 		- login()
 		- validateUser()
 		- resetPassword()
 		- userVerification()
 	# Submission Page
-		# Methods:
+		## Methods:
 		- checkForSubmission()
 		- checkForLateSubmission()
 		- getStudentSubmission()
 		- viewStudentSubmission()
 		- downloadFile()
 	# Determine grade of submission
-		# Methods:
+		## Methods:
 		- viewRubric()
 		- finalizeGrade()
 	# Submission Page
-		# Methods:
+		## Methods:
 		- publishGrade()
 	# Calculate overall grade of student
-		# Methods:
+		## Methods:
 		- calculateGrade()
 		- calculateOverallGrade()
 
 # Creating Course:
 	# Login Page
-		# Methods: 
+		## Methods: 
 		- login()
 		- validateUser()
 		- resetPassword()
 		- userVerification()
 	# Create Course Page
-		# Methods:
+		## Methods:
 		- createCourseID()
 		- createCourseTitle()
 		- getTime()
 		- getLocation()
 		- getSection()
 	# Permit/Disallow Access to Instructor Page
-		# Methods:
+		## Methods:
 		- getCourseID()
 		- getInstructorID()
 		- addInstructor()
 		- allowAccessToCourse()
 		- removeAccessFromCourse()
 	# Permit/Disallow Section Access Page
-		# Methods:
+		## Methods:
 		- getTAID()
 		- getSection()
 		- allowAccessToCourse()
 		- removeAccessFromCourse()
 	# Course Homepage
+		## Methods:
 		- addSyllabus()
 		- addLink()
 		- addStudents()
@@ -63,67 +65,67 @@
 
 # Submitting a Project:
 	# Login Page
-		# Methods: 
+		## Methods: 
 		- login()
 		- validateUser()
 		- resetPassword()
 		- userVerification()
 	# Assignment Page
-		# Methods:
+		## Methods:
 		- selectFile()
 		- getFileType()
 		- previewFile()
 	# Submission Page
-		# Methods:
+		## Methods:
 		- submitFile()
 		- includeLink()
 		- getFileExtension()
 		- getFileExtension()
 		- verifySubmission()
 	# Preview Page
-		# Methods:
+		## Methods:
 		- viewFile()
 		- viewHardCopy()
 	# Submission Page
-		# Methods:
+		## Methods:
 		- downloadFile()
 		- previewFile()
 
 # Creating an Assignment:
 	# Login Page
-		# Methods: 
+		## Methods: 
 		- login()
 		- validateUser()
 		- resetPassword()
 		- userVerification()
 	# Assignment Creation Page
-		# Methods:
+		## Methods:
 		- createName()
 		- createDescription()
 	# Upload Relevant Documents
-		# Methods:
+		## Methods:
 		- uploadFile()
 		- includeLink()
 		- uploadRubric()
 		- setPossiblePoints()
 	# Due Date Page
-		# Methods:
+		## Methods:
 		- setDate()
 		- createCalendarEvent()
 	# Publish Page
-		# Methods:
+		## Methods:
 		- makePublic()
 		- sendAnnouncement()
 
 # Adding/Removing Students:
 	# Login Page
-		# Methods: 
+		## Methods: 
 		- login()
 		- validateUser()
 		- resetPassword()
 		- userVerification()
 	# Permit Section Access Page	
-		# Methods:
+		## Methods:
 		- getStudentID()
 		- getCourseID()
 		- allowAccessToCourse()
@@ -132,20 +134,20 @@
 
 ## Classes:
 	- University
-		# Subclasses:
+		## Subclasses:
 		- College
 		- School
 	- Course
-		# Subclasses:
+		## Subclasses:
 		- Section
 	- User
-		# Subclasses:
+		## Subclasses:
 		- Students
 		- TA
 		- Instructor
 		- Administrator
 	- AdminUser
-		# Subclasses:
+		## Subclasses:
 		- Students
 		- TA
 		- Instructor
