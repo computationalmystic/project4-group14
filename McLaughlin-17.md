@@ -2,7 +2,7 @@
 
 ## Original team design document (Group 14 - Assignment 4): https://github.com/SarahMac11/skm9b3/blob/master/assignment-four/Group%2014%20-%20Assignment%204.docx
 
-## Activies:
+# Activies:
 # Grading Assignment:
 	# Login Page 
 		## Methods: 
