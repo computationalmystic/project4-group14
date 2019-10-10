@@ -1,9 +1,9 @@
-## Sarah McLaughlin To-Do List
+# Sarah McLaughlin To-Do List
 
-## Original team design document (Group 14 - Assignment 4): https://github.com/SarahMac11/skm9b3/blob/master/assignment-four/Group%2014%20-%20Assignment%204.docx
+# Original team design document (Group 14 - Assignment 4): https://github.com/SarahMac11/skm9b3/blob/master/assignment-four/Group%2014%20-%20Assignment%204.docx
 
 # Activies:
-# Grading Assignment:
+## Grading Assignment:
 	# Login Page 
 		## Methods: 
 		- login()
@@ -29,7 +29,7 @@
 		- calculateGrade()
 		- calculateOverallGrade()
 
-# Creating Course:
+## Creating Course:
 	# Login Page
 		## Methods: 
 		- login()
@@ -63,7 +63,7 @@
 		- addStudents()
 		- addFiles()
 
-# Submitting a Project:
+## Submitting a Project:
 	# Login Page
 		## Methods: 
 		- login()
@@ -91,7 +91,7 @@
 		- downloadFile()
 		- previewFile()
 
-# Creating an Assignment:
+## Creating an Assignment:
 	# Login Page
 		## Methods: 
 		- login()
@@ -132,21 +132,21 @@
 		- removeAccessFromCourse()
 		
 
-## Classes:
-	- University
+# Classes:
+	# University
 		## Subclasses:
 		- College
 		- School
-	- Course
+	# Course
 		## Subclasses:
 		- Section
-	- User
+	# User
 		## Subclasses:
 		- Students
 		- TA
 		- Instructor
 		- Administrator
-	- AdminUser
+	# AdminUser
 		## Subclasses:
 		- Students
 		- TA
