@@ -117,7 +117,7 @@
 		- makePublic()
 		- sendAnnouncement()
 
-# Adding/Removing Students:
+## Adding/Removing Students:
 	# Login Page
 		## Methods: 
 		- login()
