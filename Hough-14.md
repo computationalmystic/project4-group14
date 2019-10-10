@@ -1,3 +1,6 @@
+## Design Document
+https://github.com/Claire-Hough/Cnhfg6/blob/master/project-2/project_document.md
+
 ## Tasks
 1. Design UI
   - Login page
