@@ -55,26 +55,89 @@ A short 3-5 sentence description of what your next steps would be if you were bu
             
     ## Teacher Aassisstants (TA):
         - View Course Assignment
+            # Methods:
+            - selectCourseAssignment
+            - readAssignmentInstructions
+            - readAssignmentDueDate
         - View Student Submission for Assignment
+            # Methods:
+            - getStudentAssignment
+            - checkForSubmission
+            - checkForLateSubmission
+            - downloadSubmission
         - Search Student
+            # Methods:
+            - getStudentInformation
+            - findStudent
         - Collect Assignments
+            # Methods:
+            - getCourseAssignment
+            - getSubmissions
+            - downloadFile
         
     ## Instructor:
         - View Course Assignment
+            # Methods:
+            - selectCourseAssignment
+            - readAssignmentInstructions
+            - readAssignmentDueDate
         - View Student Submission for Assignment
+            # Methods: 
+            - getStudentAssignment
+            - checkForSubmission
+            - checkForLateSubmission
+            - downloadSubmission
         - Search Student
+            # Methods:
+            - getStudentInformation
+            - findStudent
         - Collect Assignments
+            # Methods:
+            - getCourseAssignment
+            - getSubmissions
+            - downloadFile
         - Create/Edit/Remove Courses
+            # Methods:
+            - createCourse
+            - editCourse
+            - removeCourse
+            - setCourseInformation
         - Create/Edit/Remove Sections
+            # Methods:
+            - getCourseInformation
+            - createSection
+            - editSection
+            - removeSection
+            - setSectionInformation
         - Add/Remove TA from Course Section
+            # Methods:
+            - getCourseInformation
+            - getSectionInformation
+            - getTAID
+            - addTA
+            - removeTA
         - Create/Edit/Remove Assignment of Course
+            # Methods:
+            - getAssignmentInformation
+            - createAssignment
+            - editAssignment
+            - publishAssignment
+            - removeAssignment
         
     ## System Administrator:
         - Add/Edit/Remove/Disable Instructors
-    
+            # Methods:
+            - getInstructorID
+            - addInstructor
+            - editInstructor
+            - removeInstructor
+            - disableInstructor
+
 
  
 # Next Steps:
     1.set up information for every class
     2.set up function for every class
     3.set up connection between class
+    
+    The first thing we will need to do is to set up each of our classes and subclasses by including the necessary information for each class. This will include information regarding ADMINs, Instructors, Teaching Assistants, and Students. In addition, we will also need set up classes so that each course and section can be set up easily with access to assignments and submissions. Next, we will need to set up each function that be used by the classes created. In doing that, we will need to set up access controls so that only certain users will be able to use certain functions as each action cannot be done by every class. Finally, we will need to create relationships and connections between each class. This will include different relationship types (many-to-many, one-to-many, etc.) and their connections can also be severed, for example if a student is removed from a course. 
