@@ -12,4 +12,9 @@ export class ApiService {
     console.log("called getRepos");
     return this.httpClient.get('http://augur.osshealth.io:5000/api/unstable/repos');
   }
+
+  public getGroups(){
+    console.log("called getGroups");
+    return this.httpClient.get('http://augur.osshealth.io:5000/api/unstable/repo-groups')
+  }
 }
