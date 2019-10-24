@@ -9,15 +9,21 @@ import { ApiService } from './api.service';
 export class AppComponent {
   title = 'project2';
   repos: Object;
+  groups: Object;
 
   constructor(private apiService: ApiService){}
   
   ngOnInit() {
-    console.log("ngOnInit 1");
+    console.log("ngOnInit");
     this.apiService.getRepos().subscribe((data)=>{
-      console.log("ngOnInit");
+      console.log("getRepos");
       console.log(data);
-      this.repos = data['repos'];
+      this.repos = JSON.stringify(data);
     });
+
+    this.apiService.getGroups().subscribe((data) => {
+      this.groups = JSON.stringify(data);
+      console.log(data);
+    })
   }
 }
