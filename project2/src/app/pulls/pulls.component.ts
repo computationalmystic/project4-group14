@@ -26,13 +26,11 @@ export class PullsComponent implements OnInit {
 
               this.apiService.getPullRequest(rgid, rpid).subscribe((data2) => {
                   //delete empty element in object
+                  if (data2[0] && data2[0].date) {
 
-                  //if (typeof data2[0].length === 'undefined' && typeof data2[0].length === null) {
-                  //    delete data2[0];
-                  //}
-                  //display in pages
+                      this.pulls = this.pulls + JSON.stringify(data2);
+                  }
 
-                  this.pulls = this.pulls + JSON.stringify(data2);
 
               });
           }

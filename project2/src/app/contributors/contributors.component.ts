@@ -26,13 +26,11 @@ export class ContributorsComponent implements OnInit {
                 this.apiService.getContributors(rgid, rpid).subscribe((data2) => {
                     //delete empty element in object
 
-                    //if (typeof data2[0].length === 'undefined' && typeof data2[0].length === null) {
-                    //    delete data2[0];
-                    //}
-                    //display in pages
+     
+                    if (data2[0] && data2[0].user_id) {
 
-
-                    this.contributors = this.contributors +JSON.stringify(data2);
+                        this.contributors = this.contributors + JSON.stringify(data2);
+                    }
 
                 });
             }
