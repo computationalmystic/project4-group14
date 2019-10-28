@@ -19,9 +19,12 @@ export class ApiService {
   }
 
   public getPullRequest(rgid, rpid) {
-
-        return this.httpClient.get("http://augur.osshealth.io:5000/api/unstable/repo-groups/" + rgid + "/repos/" + rpid + "/pull-request-acceptance-rate");
-
-
-    }
+   return this.httpClient.get("http://augur.osshealth.io:5000/api/unstable/repo-groups/" + rgid + "/repos/" + rpid + "/pull-request-acceptance-rate");
+  }
+  public getCommits(rgid, rpid) {
+        return this.httpClient.get("http://augur.osshealth.io:5000/api/unstable/repo-groups/" + rgid + "/repos/" + rpid + "/pull-request-acceptance-rate")
+  }
+  public getContributors(rgid, rpid) {
+        return this.httpClient.get('http://augur.osshealth.io:5000/api/unstable/repo-groups/' + rgid + '/repos/' + rpid + '/contributors/')
+  }
 }
