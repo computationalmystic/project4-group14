@@ -17,4 +17,11 @@ export class ApiService {
     console.log("called getGroups");
     return this.httpClient.get('http://augur.osshealth.io:5000/api/unstable/repo-groups')
   }
+
+  public getPullRequest(rgid, rpid) {
+
+        return this.httpClient.get("http://augur.osshealth.io:5000/api/unstable/repo-groups/" + rgid + "/repos/" + rpid + "/pull-request-acceptance-rate");
+
+
+    }
 }

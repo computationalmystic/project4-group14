@@ -1,8 +1,11 @@
 <!-- Link to home page (repos) -->
-<a [routerLink]="['/']">Home</a>
+
+<a routerLink="/" routerLinkActive ="active">Home</a>
+<!-- Link to repos and repo gourps-->
+<a routerLink="/repo" routerLinkActive ="active">Repo</a>
 <!-- Link to total commits -->
-<a [routerLink]="['/commits']">Commits</a>
+<a routerLink="/commits" routerLinkActive ="active">Commits</a>
 <!-- Link to proportion of commits by contributors -->
-<a [routerLink]="['/contributors']">Contributors</a>
+<a routerLink="/contributors" routerLinkActive ="active">Contributors</a>
 <!-- Link to pull requests -->
-<a [routerLink]="['/pulls']">Pulls</a>
+<a routerLink="/pulls" routerLinkActive ="active">Pulls</a>
