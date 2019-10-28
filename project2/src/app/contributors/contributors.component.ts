@@ -16,7 +16,7 @@ export class ContributorsComponent implements OnInit {
         this.apiService.getRepos().subscribe((data) => {
             var i;
             for (i = 0; i < Object.keys(data).length; i++) {
-                //get repo group id from data //
+                //get repo group id from data 
                 var rgid = data[i].repo_group_id;
                 //get repo id from data
 

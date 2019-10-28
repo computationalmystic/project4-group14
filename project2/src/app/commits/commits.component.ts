@@ -26,7 +26,7 @@ export class CommitsComponent implements OnInit {
                 //use get pull request function//
                 this.apiService.getCommits(rgid, rpid).subscribe((data2) => {
 
-                    this.commits = this.commits+JSON.stringify(data2);
+                    this.commits = this.commits + JSON.stringify(data2);
 
 
                 });
