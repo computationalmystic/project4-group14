@@ -7,31 +7,34 @@ import { ApiService } from '.././api.service';
     styleUrls: ['./pulls.component.css']
 })
 export class PullsComponent implements OnInit {
-    
-    pulls: Object;
 
-    constructor(private apiService: ApiService) { }
+   pulls: Object;
 
-    ngOnInit() {
-        this.apiService.getRepos().subscribe((data) => {
-            console.log("ngOnInit");
-            var i;
-            for (i = 0; i < Object.keys(data).length; i++) {
-                //get repo group id from data //
-                var rgid = data[i].repo_group_id;
-                //get repo id from data
+  constructor(private apiService: ApiService) { }
 
-                var rpid = data[i].repo_id;
-                //use get pull request function
+  ngOnInit() {
+      this.apiService.getRepos().subscribe((data) => {
+          console.log("ngOnInit");
+          var i;
+          for (i = 0; i < Object.keys(data).length; i++) {
+              //get repo group id from data //
+              var rgid = data[i].repo_group_id;
+              //get repo id from data
 
-                this.apiService.getPullRequest(rgid, rpid).subscribe((data2) => {
-                    //delete empty element in object
-                    if (data2[0] && data2[0].date) {
-                        this.pulls = this.pulls + JSON.stringify(data2);
-                    }
-            });
-        }
-    });
-}
+              var rpid = data[i].repo_id;
+              //use get pull request function
+
+              this.apiService.getPullRequest(rgid, rpid).subscribe((data2) => {
+                  //delete empty element in object
+                  if (data2[0] && data2[0].date) {
+
+                      this.pulls = this.pulls + JSON.stringify(data2);
+                  }
+
+
+              });
+          }
+      });
+  }
 
 }

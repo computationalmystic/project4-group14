@@ -8,20 +8,23 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
+
+import { CommitsComponent } from './commits/commits.component';
+import { ContributorsComponent } from './contributors/contributors.component';
 import { PullsComponent } from './pulls/pulls.component';
 import { RepoComponent } from './repo/repo.component';
 import { GroupsComponent } from './groups/groups.component';
-import { ContributorsComponent } from './contributors/contributors.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
+    CommitsComponent,
+    ContributorsComponent,
     PullsComponent,
     RepoComponent,
-    GroupsComponent,
-    ContributorsComponent
+    GroupsComponent
   ],
   imports: [
     BrowserModule,

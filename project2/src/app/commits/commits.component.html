@@ -1,0 +1,12 @@
+<h1>Commits</h1>
+
+<ng-container *ngIf="!commits">
+    <h4>Loading commit information...</h4>
+</ng-container>
+
+<ng-container *ngIf="commits">
+    <div>
+        <p> {{commits}} </p>
+        <br>
+    </div>
+</ng-container>

@@ -14,7 +14,7 @@ export class GroupsComponent implements OnInit {
   constructor( private apiService: ApiService) { }
 
   ngOnInit() {
-    this.apiService.getGroupsInfo().subscribe(data => {
+    this.apiService.getGroups().subscribe(data => {
       this.groups = data;
       console.log(this.groups);
     });
