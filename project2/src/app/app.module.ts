@@ -11,7 +11,9 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CommitsComponent } from './commits/commits.component';
 import { RepoComponent } from './repo/repo.component';
 import { GroupsComponent } from './groups/groups.component';
+
 import { HomeComponent } from './home/home.component';
+
 
 
 @NgModule({

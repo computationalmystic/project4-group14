@@ -4,6 +4,10 @@ import { CommitsComponent } from './commits/commits.component'
 import { RepoComponent } from './repo/repo.component'
 import { GroupsComponent } from './groups/groups.component';
 import { HomeComponent } from './home/home.component'
+import { CommitsComponent } from './commits/commits.component';
+
+
+
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'groups', component: GroupsComponent },

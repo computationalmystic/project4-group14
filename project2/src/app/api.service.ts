@@ -26,5 +26,7 @@ export class ApiService {
     } 
   public getContributors(rgid, rpid) {
         return this.httpClient.get("http://augur.osshealth.io:5000/api/unstable/repo-groups/" + rgid + "/repos/" + rpid + "/contributors/")
+
   }
 }
+
