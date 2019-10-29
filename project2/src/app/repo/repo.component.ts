@@ -13,12 +13,11 @@ export class RepoComponent implements OnInit {
     constructor(private apiService: ApiService) { }
 
     ngOnInit() {
-        console.log("ngOnInit");
-        this.apiService.getRepos().subscribe((data) => {
-            console.log("getRepos");
-            console.log(data);
-            this.repos = JSON.stringify(data);
-        });
+      console.log("getRepos");
+      this.apiService.getRepos().subscribe(data => {
+        this.repos = data;
+        console.log(this.repos);
+      });
   }
 
 }

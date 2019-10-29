@@ -6,8 +6,13 @@
 </ng-container>
 
 <ng-container *ngIf="repos">
-    <div>
-        <p> {{repos}} </p>
+    <div *ngFor="let repo of repos">
+        <h3>Repo Name: {{repo.repo_name}}</h3>
+        <h2>Repo ID: {{repo.repo_id}} </h2>
+        <h2>Repo URL: {{repo.url}}</h2>
+        <h4>Repo Group ID: {{repo.repo_group_id}}</h4>
+        <h4>All-time Commits: {{repo.commits_all_time}}</h4>
+        <h5>Description: {{repo.description}}</h5>
         <br>
     </div>
 </ng-container>

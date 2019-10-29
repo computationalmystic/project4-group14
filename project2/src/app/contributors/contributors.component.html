@@ -22,13 +22,13 @@
 
 <ng-container *ngIf="contributors">
     <div>
-        <div *ngFor="let contibutor of contributors">
+        <div *ngFor="let contributor of contributors">
             <div>
                 <h3> User ID: {{ contributor.user_id }} </h3>
-                <h4> Pull Requests: {{ contontributor.pull_requests }} </h4>
+                <h4> Pull Requests: {{ contributor.pull_requests }} </h4>
                 <h4> Number of Commits: {{ contributor.commits }} </h4>
-                <h4> Total Commits: {{ contontributor.total }} </h4>
-                <h4> Number of Issues: {{ contontributor.issues }} </h4>
+                <h4> Total Commits: {{ contributor.total }} </h4>
+                <h4> Number of Issues: {{ contributor.issues }} </h4>
                 <br>
             </div>
         </div>
