@@ -1,4 +1,5 @@
 <h3>Pull Requests</h3>
+<!-- if no pulls in string yet show loading -->
 <ng-container *ngIf="!pulls">
     <h4>Loading pull request information...</h4>
 </ng-container>
@@ -16,6 +17,7 @@
 </ng-container>
 
 <h3>Contributors</h3><br>
+<!-- if no contributors in string yet show loading -->
 <ng-container *ngIf="!contributors">
     <h4>Loading contributors information...</h4>
 </ng-container>
