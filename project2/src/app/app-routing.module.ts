@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { PullsComponent } from './pulls/pulls.component';
 import { CommitsComponent } from './commits/commits.component'
-import { ContributorsComponent } from './contributors/contributors.component'
 import { RepoComponent } from './repo/repo.component'
 import { GroupsComponent } from './groups/groups.component';
-
+import { HomeComponent } from './home/home.component'
 const routes: Routes = [
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: 'groups', component: GroupsComponent },
     { path: 'repo', component: RepoComponent },
-    { path: 'pulls', component: PullsComponent },
-    { path: 'commits', component: CommitsComponent },
-    { path: 'contributors', component: ContributorsComponent },
-    { path: 'groups', component: GroupsComponent }
+    { path: 'home', component: HomeComponent },
+    { path: 'commits/:groupId/:repoId', component: CommitsComponent },
+    { path: '**', redirectTo: '/home', pathMatch: 'full' }
     ];
 
 @NgModule({
@@ -19,4 +18,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [PullsComponent, CommitsComponent, ContributorsComponent, RepoComponent]
+export const routingComponents = [CommitsComponent, RepoComponent, HomeComponent]

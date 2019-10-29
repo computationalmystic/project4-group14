@@ -1,12 +1,73 @@
+<h1>Contributors</h1>
+
+<ng-container *ngIf="!contributors">
+    <h4>Loading contributor information...</h4>
+</ng-container>
+
+<ng-container *ngIf="contributors && contributors ==[]">
+    <h4> No Results</h4>
+</ng-container>
+<br>
+
+<ng-container *ngIf="contributors">
+     <div *ngFor="let contributor of contributors">
+        <div class="card custom-card contributor">
+        <h3 style=" font-size:small ">User_ID: {{contributor.user_id}}</h3> 
+        <h3 style=" font-size:small ">Commits: {{contributor.commits}} </h3>
+        <h3 style=" font-size:small ">Issues: {{contributor.issues}}</h3>
+        <h3 style=" font-size:small ">Issue_comments: {{contributor.issue_comments}}</h3>
+        <h3 style=" font-size:small ">Pull_requests: {{contributor.pull_requests}}</h3>
+        <h3 style=" font-size:small ">Pull_request_comments: {{contributor.pull_request_comments}}</h3>
+        <h3 style=" font-size:small ">Total: {{contributor.total}}</h3>
+        <h3 style=" font-size:small ">Repo_id: {{contributor.repo_id}}</h3>
+        <h3 style=" font-size:small ">Repo_Name: {{contributor.repo_name}}</h3>
+        <br>
+       </div>
+    </div>
+</ng-container>
+
+<h1>Pulls</h1>
+
+<ng-container *ngIf="!pulls">
+    <h4>Loading pull information...</h4>
+</ng-container>
+
+<ng-container *ngIf="pulls && pulls ==[]">
+    <h4> No Results</h4>
+</ng-container>
+<br>
+
+<ng-container *ngIf="pulls">
+   <div *ngFor="let pull of pulls">
+   <div class="card custom-card pulls">
+        <h3 style=" font-size:small ">Date:{{pull.date}}</h3>
+        <h3 style=" font-size:small ">Rate:{{pull.rate}}</h3>
+        <br>
+      </div>
+     </div>
+</ng-container>
+
+
 <h1>Commits</h1>
 
 <ng-container *ngIf="!commits">
     <h4>Loading commit information...</h4>
 </ng-container>
 
+<ng-container *ngIf="commits && commits ==[]">
+    <h4> No Results</h4>
+</ng-container>
+<br>
+
 <ng-container *ngIf="commits">
-    <div>
-        <p> {{commits}} </p>
+    <div *ngFor="let commit of commits">
+      <div class="card custom-card commits">
+        <h3 style=" font-size:small " >Repo ID: {{commit.repo_id}}</h3>
+        <h3 style=" font-size:small ">Repo Name: {{commit.repo_name}} </h3>
+        <h3 style=" font-size:small ">Email: {{commit.email}}</h3>
+        <h3 style=" font-size:small ">Commits: {{commit.commits}}</h3>
         <br>
+      </div>
     </div>
 </ng-container>
+

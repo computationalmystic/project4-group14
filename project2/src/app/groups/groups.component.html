@@ -9,13 +9,11 @@
     <div>
         <div *ngFor="let group of groups">
             <!-- add repo group according to repo group id -->
-            <div [routerLink]="'/repos/' + group.repo_group_id">
-                <h3> Group Name: {{ group.rg_name }} </h3>
-                <h4> Repository Group ID: {{ group.repo_group_id }} </h4>
-                <h5> Group Description: {{ group.rg_description }} </h5>
-                <h5> Last Modified: {{ group.rg_last_modified }}</h5>
+                <h3 style=" font-size:small"> Group Name: {{ group.rg_name }} </h3>
+                <h3 style=" font-size:small"> Repository Group ID: {{ group.repo_group_id }} </h3>
+                <h3 style=" font-size:small"> Group Description: {{ group.rg_description }} </h3>
+                <h3 style=" font-size:small"> Last Modified: {{ group.rg_last_modified }}</h3>
                 <br>
-            </div>
         </div>
     </div>
 </ng-container>
