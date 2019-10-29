@@ -17,6 +17,7 @@ export class CommitsComponent implements OnInit {
 
         this.apiService.getRepos().subscribe((data) => {
             this.repos = data;
+            console.log(data);
             console.log("ngOnInit");
             var i;
             for (i = 0; i < Object.keys(data).length; i++) {
@@ -25,11 +26,10 @@ export class CommitsComponent implements OnInit {
                 //get repo id from data
                 var rpid = data[i].repo_id;
 
-                this.commits = data[i].commits;
-                //use get pull request function//
-                // this.apiService.getCommits(rgid, rpid).subscribe((data2) => {
-                //     this.commits = this.commits + JSON.stringify(data2);
-                // });
+                // use get pull request function//
+                this.apiService.getCommits(rgid, rpid).subscribe((data2) => {
+                    this.commits = this.commits + JSON.stringify(data2);
+                });
             }
 
         });

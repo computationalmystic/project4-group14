@@ -1,6 +1,6 @@
 <h3>Contributor Pull Rates</h3>
 <!-- if no pulls in string yet show loading -->
-<ng-container *ngIf="!pulls">
+<!-- <ng-container *ngIf="!pulls">
     <h4>Loading pull request information...</h4>
 </ng-container>
 
@@ -14,10 +14,17 @@
             </div>
        </div>
     </div>
+</ng-container> -->
+
+<ng-container *ngIf="contributors">
+    <div>
+        <p> {{contributors}} </p>
+        <br>
+    </div>
 </ng-container>
 
-<h3>Contributors</h3><br>
-<!-- if no contributors in string yet show loading -->
+<!-- <h3>Contributors</h3><br>
+if no contributors in string yet show loading 
 <ng-container *ngIf="!contributors">
     <h4>Loading contributors information...</h4>
 </ng-container>
@@ -35,4 +42,4 @@
             </div>
         </div>
     </div>
-</ng-container>
+</ng-container> -->
