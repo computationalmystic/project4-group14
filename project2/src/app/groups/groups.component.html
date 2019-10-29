@@ -1,0 +1,21 @@
+<h1>Groups</h1>
+<br>
+
+<ng-container *ngIf="!groups">
+    <h4>Loading group information...</h4>
+</ng-container>
+
+<ng-container *ngIf="groups">
+    <div>
+        <div *ngFor="let group of groups">
+            <!-- add repo group according to repo group id -->
+            <div [routerLink]="'/repos/' + group.repo_group_id">
+                <h3> Group Name: {{ group.rg_name }} </h3>
+                <h4> Repository Group ID: {{ group.repo_group_id }} </h4>
+                <h5> Group Description: {{ group.rg_description }} </h5>
+                <h5> Last Modified: {{ group.rg_last_modified }}</h5>
+                <br>
+            </div>
+        </div>
+    </div>
+</ng-container>

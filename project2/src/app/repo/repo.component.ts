@@ -19,11 +19,6 @@ export class RepoComponent implements OnInit {
             console.log(data);
             this.repos = JSON.stringify(data);
         });
-
-        this.apiService.getGroups().subscribe((data) => {
-            this.groups = JSON.stringify(data);
-            console.log(data);
-        });
   }
 
 }

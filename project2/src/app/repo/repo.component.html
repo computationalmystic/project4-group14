@@ -1,3 +1,13 @@
-<h1>Repos and Groups</h1>
-<p>{{repos}} </p>
-<p>{{groups}}</p>
+<h1>Repositories</h1>
+<br>
+
+<ng-container *ngIf="!repos">
+    <h4>Loading repository information...</h4>
+</ng-container>
+
+<ng-container *ngIf="repos">
+    <div>
+        <p> {{repos}} </p>
+        <br>
+    </div>
+</ng-container>
