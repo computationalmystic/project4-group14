@@ -1,0 +1,45 @@
+<h3>Contributor Pull Rates</h3>
+<!-- if no pulls in string yet show loading -->
+<!-- <ng-container *ngIf="!pulls">
+    <h4>Loading pull request information...</h4>
+</ng-container>
+
+<ng-container *ngIf="pulls">
+    <div>
+        <div *ngFor="let pull of pulls">
+            <div>
+                <h3> Pull Date: {{ pull.date }} </h3>
+                <h4> Pull Acceptance Rate: {{ pull.rate }} </h4>
+                <br>
+            </div>
+       </div>
+    </div>
+</ng-container> -->
+
+<ng-container *ngIf="contributors">
+    <div>
+        <p> {{contributors}} </p>
+        <br>
+    </div>
+</ng-container>
+
+<!-- <h3>Contributors</h3><br>
+if no contributors in string yet show loading 
+<ng-container *ngIf="!contributors">
+    <h4>Loading contributors information...</h4>
+</ng-container>
+
+<ng-container *ngIf="contributors">
+    <div>
+        <div *ngFor="let contributor of contributors">
+            <div>
+                <h3> User ID: {{ contributor.user_id }} </h3>
+                <h4> Pull Requests: {{ contributor.pull_requests }} </h4>
+                <h4> Number of Commits: {{ contributor.commits }} </h4>
+                <h4> Total Commits: {{ contributor.total }} </h4>
+                <h4> Number of Issues: {{ contributor.issues }} </h4>
+                <br>
+            </div>
+        </div>
+    </div>
+</ng-container> -->
