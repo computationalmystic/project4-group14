@@ -1,0 +1,19 @@
+<h1>Total Commits</h1>
+<br>
+
+<ng-container *ngIf="!repos">
+    <h4>Loading group information...</h4>
+</ng-container>
+
+<ng-container *ngIf="repos">
+    <div>
+        <div *ngFor="let repo of repos">
+            <!-- add repo group according to repo group id -->
+            <div>
+                <h3> Repo Name: {{ repo.repo_name }} </h3>
+                <h4> Repo Commits: {{ commits }} </h4>
+                <br>
+            </div>
+        </div>
+    </div>
+</ng-container>

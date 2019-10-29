@@ -12,6 +12,7 @@ import { PullsComponent } from './pulls/pulls.component';
 import { RepoComponent } from './repo/repo.component';
 import { GroupsComponent } from './groups/groups.component';
 import { ContributorsComponent } from './contributors/contributors.component';
+import { CommitsComponent } from './commits/commits.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ContributorsComponent } from './contributors/contributors.component';
     PullsComponent,
     RepoComponent,
     GroupsComponent,
-    ContributorsComponent
+    ContributorsComponent,
+    CommitsComponent
   ],
   imports: [
     BrowserModule,
